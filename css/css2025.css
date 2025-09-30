@@ -1,0 +1,193 @@
+    body {
+		background-color: #EEEEEE;
+	}
+	.my-5 {
+		background-color: #FEFEFE;
+		padding: 1rem 1rem 1rem 1rem; 
+		border-radius: .100rem;
+	}
+  
+    .uppercase-title {
+      text-transform: uppercase;
+    }
+
+    .section-header {
+      background-color: #0a58ca;
+      color: #fff;
+      padding: .75rem 1rem;
+      border-radius: .25rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-body {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .fs-6 {
+      font-size: .9rem;
+    }
+
+    /* profilkép konténer – háttérkép */
+    #mypic_big_div {
+      width: 250px;
+      height: 320px;
+      background-image: url('mypic_big_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      float: right;
+      margin: 0 0 1rem 1rem;
+      cursor: pointer;
+    }
+    /* profilkép – eltűnő körmaszk az img-en */
+    #mypic_big {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      clip-path: circle(150% at 50% 50%);
+      transition: clip-path .6s ease-out;
+    }
+    #mypic_big.fade-out {
+      clip-path: circle(0% at 50% 50%);
+    }
+
+    /* fejléc: sötét háttér + jobbra igazított, nem ismétlődő kép */
+    header {
+      background-color: #262626;
+    }
+	/* Alap desktop stílus */
+	header .container {
+	  position: relative;
+	  background-color: #262626;
+	  padding: 2rem 1rem;
+	  border-radius: .25rem;
+	  z-index: 1;
+	}
+	/* Háttér külön rétegként */
+	header .container::before {
+	  content: "";
+	  position: absolute;
+	  inset: 0;
+	  background: url('top_background.jpg') no-repeat right top;
+	  background-size: contain;
+	  opacity: 1; /* Desktopon 100% láthatóság */
+	  z-index: 0;
+	  border-radius: .25rem;
+	}
+	/* Tartalom mindig a háttér fölött van */
+	header .container > * {
+	  position: relative;
+	  z-index: 2;
+	}
+	/* Mobil nézet – áttetszőbb háttér */
+	@media (max-width: 767.98px) {
+	  header .container::before {
+		opacity: 0.2; /* 10% láthatóság */
+	  }
+	}
+
+
+    /* mobilon a kép középre, asztalon jobbra */
+    @media (max-width: 767px) {
+      #mypic_big_div {
+        float: none;
+        margin: 0 auto 1rem;
+      }
+    }
+	
+	/* backToTop */ 
+	#backToTop {
+	  position: fixed;
+	  bottom: 20px;
+	  right: 20px;
+	  width: 45px;
+	  height: 45px;
+	  background-color: rgba(0, 0, 0, 0.6);
+	  color: #fff;
+	  border: none;
+	  border-radius: 15%;
+	  font-size: 1.25rem;
+	  display: none;
+	  align-items: center;
+	  justify-content: center;
+	  cursor: pointer;
+	  z-index: 1000;
+	}
+
+	/* Carousel navigációs gombok kiemelése */
+	#referenciakCarousel .carousel-control-prev-icon,
+	#referenciakCarousel .carousel-control-next-icon {
+	  /* Féláttetsző fehér kör mögé tesszük az ikont */
+	  background-color: rgba(0,0,0,0.8);
+	  border-radius: 50%;
+	  /* Árnyék az ikonkör körül */
+	  filter: invert(1) drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
+	  /* Ikon méretezése a körön belül */
+	  background-size: 50% 50%;
+	}
+
+	/* Kattintás (active): fehér nyíl, csak árnyék marad */
+	#referenciakCarousel .carousel-control-prev:active .carousel-control-prev-icon,
+	#referenciakCarousel .carousel-control-next:active .carousel-control-next-icon {
+	  filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
+	}
+
+
+	/* Kattintható terület növelése (opcionális) */
+	#referenciakCarousel .carousel-control-prev,
+	#referenciakCarousel .carousel-control-next {
+	  width: 4rem;
+	  height: 4rem;
+	}
+
+	/* A gomb pozicionálása kissé beljebb, hogy ne lógjon túl */
+	#referenciakCarousel .carousel-control-prev {
+	  left: 0rem;
+	}
+	#referenciakCarousel .carousel-control-next {
+	  right: 0rem;
+	}
+  
+	/* (Opcionális) a videóarány konténer is biztosan 100% széles legyen */
+	#referenciakCarousel .carousel-item .ratio {
+	  width: 100% !important;
+	}	
+  
+	/* alapértelmezett (asztali) */
+	#referenciakCarousel .carousel-item p.fs-6 {
+	  height: 3rem;        /* kb. 3 sor */
+	  overflow: hidden;
+	  margin-bottom: 1rem;
+	  align-items: center;
+
+	}
+
+	/* mobil nézet: 5 sor magasra nyitjuk */
+	@media (max-width: 767.98px) {
+	  #referenciakCarousel .carousel-item p.fs-6 {
+		height: 9rem;      /* kb. 9 sor */
+	    margin-top: 2rem;
+		align-items: center;
+	  }
+	}
+	
+	/* Videó alatti szöveg */
+	#referenciakCarousel .carousel-item p.fs-7 {
+	  margin-top: 0.5rem;
+	}	
+
+	/* Videó alatti szöveg - mobil nézet */
+	@media (max-width: 767.98px) {
+	  #referenciakCarousel .carousel-item p.fs-7 {
+		margin-top: 1rem;
+	  }
+	}
+	
+	/* Menünyitás beállítása*/
+	.collapsing {
+	  transition: height 1s ease-in-out;
+	}
