@@ -169,7 +169,7 @@
 	/* mobil nézet: 5 sor magasra nyitjuk */
 	@media (max-width: 767.98px) {
 	  #referenciakCarousel .carousel-item p.fs-6 {
-		height: 9rem;      /* kb. 9 sor */
+		height: 12rem;      /* kb. 12 sor */
 	    margin-top: 2rem;
 		align-items: center;
 	  }
