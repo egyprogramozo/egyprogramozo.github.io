@@ -24,6 +24,7 @@
   />
 
     <!-- Gyors menü és kijelölés blokkoló --> 
+	<!--
     <script>
             document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
@@ -35,6 +36,7 @@
               user-select: none;
         }
     </style>
+	-->
 
 </head>
 <body>
@@ -123,6 +125,53 @@
         </a>
       </div>
     </div>
+
+<!-- ===== Friss mini-esettanulmányok ===== -->
+<section id="latest-cases" aria-labelledby="latest-cases-title">
+  <div class="wrap">
+    <h2 id="latest-cases-title">Friss jegyzeteim</h2>
+    <p class="subtitle">Képzéseimből és laborgyakorlataimból készült rövid jegyzetek, mini esettanulmányok és képernyőképek</p>
+
+    <div class="grid">
+      <a class="card" href="https://github.com/egyprogramozo/00030_Projects/tree/main/TryHackMe%20challenges"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="TryHackMe kihívások — jegyzetek">
+        <img class="thumb" src="objects/friss_jegyzeteim_tryhackme.png" alt="TryHackMe kihívások — jegyzetek – illusztráció"
+             loading="lazy" width="640" height="360" />
+        <div class="body">
+          <span class="tag">TryHackMe</span>
+          <h3 class="title">TryHackMe kihívások — jegyzetek</h3>
+          <p class="desc">Hands-on feladatokból készült jegyzetek és tanulságok.</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/egyprogramozo/00010_Study-Notes/blob/main/AI%20Security%20Nuggets%20-%20Cisco/AI%20Biztons%C3%A1gi%20Gy%C3%B6ngyszemek%20(AI%20Security%20Nuggets)%20-%20HU.md"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="AI Biztonsági Gyöngyszemek (Cisco)">
+        <img class="thumb" src="objects/friss_jegyzeteim_ai_biztonsagi_gyongyszemek.png" alt="AI Biztonsági Gyöngyszemek (Cisco) – illusztráció"
+             loading="lazy" width="640" height="360" />
+        <div class="body">
+          <span class="tag">Jegyzet</span>
+          <h3 class="title">AI Biztonsági Gyöngyszemek (Cisco)</h3>
+          <p class="desc">AI/ML biztonsági alapok vállalati szemlélettel.</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/egyprogramozo/00010_Study-Notes/tree/main/Getting%20Started%20with%20Cisco%20Packet%20Tracer%20-%20Cisco"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Cisco Packet Tracer — első lépések">
+        <img class="thumb" src="objects/friss_jegyzeteim_cisco_packet_tracer.png" alt="Cisco Packet Tracer — első lépések – illusztráció"
+             loading="lazy" width="640" height="360" />
+        <div class="body">
+          <span class="tag">Hálózat</span>
+          <h3 class="title">Cisco Packet Tracer — első lépések</h3>
+          <p class="desc">CCNA-hoz vezető alapok: topológiák, routing, diagnosztika.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ===== /Friss mini-esettanulmányok ===== -->
 
   <main class="container my-5">
     <!-- Bemutatkozás -->
@@ -789,7 +838,7 @@
   </main>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p class="m-0">&copy; 2021-<script type="text/javascript">document.write( new Date().getFullYear() );</script> egyprogramozo.github.io, Hajdu Gergely | Utolsó frissítés: 2025-09-28</p>    
+    <p class="m-0">&copy; 2021-<script type="text/javascript">document.write( new Date().getFullYear() );</script> egyprogramozo.github.io, Hajdu Gergely | Utolsó frissítés: 2025-10-12</p>    
   </footer>
 
   <script
