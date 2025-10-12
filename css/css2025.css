@@ -239,7 +239,7 @@
       display:block; background:#f2f4f8;
     }
 
-    #latest-cases .body{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1;}
+    #latest-cases .body{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:180px;}
     #latest-cases .tag{
       display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;
       background:rgba(11,95,255,.10);color:var(--accent);font-weight:600;
