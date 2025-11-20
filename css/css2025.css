@@ -1,11 +1,11 @@
     body {
-		background-color: #EEEEEE;
-	}
-	.my-5 {
-		background-color: #FEFEFE;
-		padding: 1rem 1rem 1rem 1rem; 
-		border-radius: .100rem;
-	}
+        background-color: #EEEEEE;
+    }
+    .my-5 {
+        background-color: #FEFEFE;
+        padding: 1rem 1rem 1rem 1rem; 
+        border-radius: .100rem;
+    }
   
     .uppercase-title {
       text-transform: uppercase;
@@ -59,36 +59,36 @@
     header {
       background-color: #262626;
     }
-	/* Alap desktop stílus */
-	header .container {
-	  position: relative;
-	  background-color: #262626;
-	  padding: 2rem 1rem;
-	  border-radius: .25rem;
-	  z-index: 1;
-	}
-	/* Háttér külön rétegként */
-	header .container::before {
-	  content: "";
-	  position: absolute;
-	  inset: 0;
-	  background: url('top_background.jpg') no-repeat right top;
-	  background-size: contain;
-	  opacity: 1; /* Desktopon 100% láthatóság */
-	  z-index: 0;
-	  border-radius: .25rem;
-	}
-	/* Tartalom mindig a háttér fölött van */
-	header .container > * {
-	  position: relative;
-	  z-index: 2;
-	}
-	/* Mobil nézet – áttetszőbb háttér */
-	@media (max-width: 767.98px) {
-	  header .container::before {
-		opacity: 0.2; /* 10% láthatóság */
-	  }
-	}
+    /* Alap desktop stílus */
+    header .container {
+      position: relative;
+      background-color: #262626;
+      padding: 2rem 1rem;
+      border-radius: .25rem;
+      z-index: 1;
+    }
+    /* Háttér külön rétegként */
+    header .container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('top_background.jpg') no-repeat right top;
+      background-size: contain;
+      opacity: 1; /* Desktopon 100% láthatóság */
+      z-index: 0;
+      border-radius: .25rem;
+    }
+    /* Tartalom mindig a háttér fölött van */
+    header .container > * {
+      position: relative;
+      z-index: 2;
+    }
+    /* Mobil nézet – áttetszőbb háttér */
+    @media (max-width: 767.98px) {
+      header .container::before {
+        opacity: 0.2; /* 10% láthatóság */
+      }
+    }
 
 
     /* mobilon a kép középre, asztalon jobbra */
@@ -98,111 +98,117 @@
         margin: 0 auto 1rem;
       }
     }
-	
-	/* backToTop */ 
-	#backToTop {
-	  position: fixed;
-	  bottom: 20px;
-	  right: 20px;
-	  width: 45px;
-	  height: 45px;
-	  background-color: rgba(0, 0, 0, 0.6);
-	  color: #fff;
-	  border: none;
-	  border-radius: 15%;
-	  font-size: 1.25rem;
-	  display: none;
-	  align-items: center;
-	  justify-content: center;
-	  cursor: pointer;
-	  z-index: 1000;
-	}
+    
+    /* backToTop */ 
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: none;
+      border-radius: 15%;
+      font-size: 1.25rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+    }
 
-	/* Carousel navigációs gombok kiemelése */
-	#referenciakCarousel .carousel-control-prev-icon,
-	#referenciakCarousel .carousel-control-next-icon {
-	  /* Féláttetsző fehér kör mögé tesszük az ikont */
-	  background-color: rgba(0,0,0,0.8);
-	  border-radius: 50%;
-	  /* Árnyék az ikonkör körül */
-	  filter: invert(1) drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
-	  /* Ikon méretezése a körön belül */
-	  background-size: 50% 50%;
-	}
+    /* Carousel navigációs gombok kiemelése */
+    #referenciakCarousel .carousel-control-prev-icon,
+    #referenciakCarousel .carousel-control-next-icon {
+      /* Féláttetsző fehér kör mögé tesszük az ikont */
+      background-color: rgba(0,0,0,0.8);
+      border-radius: 50%;
+      /* Árnyék az ikonkör körül */
+      filter: invert(1) drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
+      /* Ikon méretezése a körön belül */
+      background-size: 50% 50%;
+    }
 
-	/* Kattintás (active): fehér nyíl, csak árnyék marad */
-	#referenciakCarousel .carousel-control-prev:active .carousel-control-prev-icon,
-	#referenciakCarousel .carousel-control-next:active .carousel-control-next-icon {
-	  filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
-	}
+    /* Kattintás (active): fehér nyíl, csak árnyék marad */
+    #referenciakCarousel .carousel-control-prev:active .carousel-control-prev-icon,
+    #referenciakCarousel .carousel-control-next:active .carousel-control-next-icon {
+      filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0.8));
+    }
 
 
-	/* Kattintható terület növelése (opcionális) */
-	#referenciakCarousel .carousel-control-prev,
-	#referenciakCarousel .carousel-control-next {
-	  width: 4rem;
-	  height: 4rem;
-	}
+    /* Kattintható terület növelése (opcionális) */
+    #referenciakCarousel .carousel-control-prev,
+    #referenciakCarousel .carousel-control-next {
+      width: 4rem;
+      height: 4rem;
+    }
 
-	/* A gomb pozicionálása kissé beljebb, hogy ne lógjon túl */
-	#referenciakCarousel .carousel-control-prev {
-	  left: 0rem;
-	}
-	#referenciakCarousel .carousel-control-next {
-	  right: 0rem;
-	}
+    /* A gomb pozicionálása kissé beljebb, hogy ne lógjon túl */
+    #referenciakCarousel .carousel-control-prev {
+      left: 0rem;
+    }
+    #referenciakCarousel .carousel-control-next {
+      right: 0rem;
+    }
   
-	/* (Opcionális) a videóarány konténer is biztosan 100% széles legyen */
-	#referenciakCarousel .carousel-item .ratio {
-	  width: 100% !important;
-	}	
+    /* (Opcionális) a videóarány konténer is biztosan 100% széles legyen */
+    #referenciakCarousel .carousel-item .ratio {
+      width: 100% !important;
+    }    
   
-	/* alapértelmezett (asztali) */
-	#referenciakCarousel .carousel-item p.fs-6 {
-	  height: 3rem;        /* kb. 3 sor */
-	  overflow: hidden;
-	  margin-bottom: 1rem;
-	  align-items: center;
-	}
+    /* alapértelmezett (asztali) */
+    #referenciakCarousel .carousel-item p.fs-6 {
+      height: 3rem;        /* kb. 3 sor */
+      overflow: hidden;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
 
-	/* mobil nézet: 5 sor magasra nyitjuk */
-	@media (max-width: 767.98px) {
-	  #referenciakCarousel .carousel-item p.fs-6 {
-		height: 10rem;      /* kb. 10 sor */
-	    margin-top: 2rem;
-		align-items: center;
-	  }
-	  
-	  #referenciakCarousel .carousel-item h3.h5 {
-		height: 3rem;      /* kb. 3 sor */
-	  }
-	}
-	
-	/* Videó alatti szöveg */
-	#referenciakCarousel .carousel-item p.fs-7 {
-	  margin-top: 0.5rem;
-	}	
+    /* mobil nézet: 5 sor magasra nyitjuk */
+    @media (max-width: 767.98px) {
+      #referenciakCarousel .carousel-item p.fs-6 {
+        height: 10rem;      /* kb. 10 sor */
+        margin-top: 2rem;
+        align-items: center;
+      }
+      
+      #referenciakCarousel .carousel-item h3.h5 {
+        height: 3rem;      /* kb. 3 sor */
+      }
+    }
+    
+    /* Videó alatti szöveg */
+    #referenciakCarousel .carousel-item p.fs-7 {
+      margin-top: 0.5rem;
+    }    
 
-	/* Videó alatti szöveg - mobil nézet */
-	@media (max-width: 767.98px) {
-	  #referenciakCarousel .carousel-item p.fs-7 {
-		margin-top: 1rem;
-	  }
-	}
-	
-	/* Menünyitás beállítása*/
-	.collapsing {
-	  transition: height 1s ease-in-out;
-	}
+    /* Videó alatti szöveg - mobil nézet */
+    @media (max-width: 767.98px) {
+      #referenciakCarousel .carousel-item p.fs-7 {
+        margin-top: 1rem;
+      }
+    }
+    
+    /* Menünyitás beállítása*/
+    .collapsing {
+      transition: height 1s ease-in-out;
+    }
 
 
-	/*** Friss mini-esettanulmányok ***/
+    /*** Friss mini-esettanulmányok ***/
     #latest-cases{
       --card-radius:14px; --card-shadow:0 6px 24px rgba(0,0,0,.08);
       --gap:16px; --accent:#0b5fff; --title-indent:clamp(6px,0.8vw,14px);
       padding:24px 0 8px;
     }
-    #latest-cases .wrap{max-width:1100px;margin:0 auto;padding:0px 0px; text-align:center;}
+    #latest-cases{
+      --card_simple-radius:14px; --card_simple-shadow:0 6px 24px rgba(0,0,0,.08);
+      --gap:16px; --accent:#0b5fff; --title-indent:clamp(6px,0.8vw,14px);
+      padding:24px 0 8px;
+    }
+
+    #latest-cases .wrap{max-width:1000px;margin:0 auto;padding:0px 0px; text-align:center;}
     #latest-cases h2{
       font-size:clamp(1.3rem,1.2rem + 1vw,1.8rem);
       margin:0 0 10px; letter-spacing:.2px; padding-left:var(--title-indent);
@@ -225,13 +231,22 @@
       border-radius:var(--card-radius); box-shadow:var(--card-shadow);
       text-decoration:none; overflow:hidden;
       transition:transform .18s ease, box-shadow .18s ease;
-	  text-align:left;
+      text-align:left;
     }
     #latest-cases .card:hover, #latest-cases .card:focus-visible{
-      transform:translateY(-2px);
+      transform:translateY(0px);
       box-shadow:0 10px 28px rgba(0,0,0,.12), 0 0 0 2px rgba(11,95,255,.25) inset;
       outline:none;
     }
+
+    #latest-cases .card_simple{
+      display:flex; flex-direction:column; background:#fff; color:inherit;
+      border-radius:var(--card-radius); box-shadow:var(--card-shadow);
+      text-decoration:none; overflow:hidden;
+      transition:transform .18s ease, box-shadow .18s ease;
+      text-align:left;
+    }
+
 
     /* Kép: 16:9 */
     #latest-cases .thumb{
@@ -243,7 +258,8 @@
     #latest-cases .tag{
       display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;
       background:rgba(11,95,255,.10);color:var(--accent);font-weight:600;
-	  text-align:center;
+      text-align:center;
     }
     #latest-cases .title{font-size:1.05rem;line-height:1.35;margin:2px 0 0;font-weight:650;color:#111;}
-    #latest-cases .desc{margin:0;color:#333;font-size:.95rem;}	
+    #latest-cases .desc{margin:0;color:#333;font-size:.95rem;}
+    #latest-cases .bovebb{text-align:right; font-size: .8rem; padding-right:10px; padding-top:10px; color:#0D6EFD}
