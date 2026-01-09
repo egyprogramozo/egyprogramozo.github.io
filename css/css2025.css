@@ -86,7 +86,7 @@
     /* Mobil nézet – áttetszőbb háttér */
     @media (max-width: 767.98px) {
       header .container::before {
-        opacity: 0.2; /* 10% láthatóság */
+        opacity: 0.05; /* % láthatóság */
       }
     }
 
